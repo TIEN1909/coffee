@@ -1,0 +1,504 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Arial", sans-serif;
+}
+/* main */
+/* header */
+.btn-list,
+.btn-off {
+  display: none;
+}
+.header {
+  /* padding: 14px 0; */
+  height: 70px;
+}
+.header-container {
+  line-height: 70px;
+}
+.header-logo {
+  width: 185px;
+  height: 43px;
+}
+.header-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0 15px;
+  border-bottom: 5px solid transparent;
+  transition: all 450ms ease;
+}
+.header-link:hover {
+  background-color: #000;
+  color: #fbae17;
+  border-bottom: 5px solid #fbae17;
+}
+.header-country {
+  width: 26px;
+  height: 22px;
+}
+.header-country > img {
+  width: 100%;
+  height: 100%;
+}
+.btn-header {
+  align-items: center;
+  background-color: #fbae17;
+  border-radius: 50px;
+  display: flex;
+  font-family: utmab;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 20px;
+  padding: 0px 25px;
+  text-transform: uppercase;
+  height: 46px;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  transition: all 450ms ease;
+}
+.btn-header:hover {
+  background-color: #000;
+  color: #fbae17;
+}
+
+/* end header */
+
+/* hero */
+.hero {
+  background-image: url("https://milanocoffee.com.vn/wp-content/uploads/2022/05/kenh-phan-phoi-banner.jpg");
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container > h1 {
+  color: #fbae17;
+  font-size: 72px;
+  line-height: 86.4px;
+  text-transform: uppercase;
+}
+/* share */
+.share {
+  padding: 80px 0;
+}
+.share-container > h2 {
+  font-size: 29px;
+  line-height: 34.8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.share-content {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 28px;
+}
+.share-content > p {
+  line-height: 25px;
+  font-size: 16px;
+}
+/* end share */
+/* about  */
+.about-container {
+  background-color: #f2f1f0;
+  padding: 34px;
+  border-radius: 12px;
+  gap: 0 55px;
+}
+.about-left {
+}
+.about-image {
+  width: 758px;
+  height: 508px;
+}
+.about-right > h2 {
+  width: 319px;
+  font-weight: 700;
+  color: #000;
+}
+.about-content {
+  margin-top: 30px;
+  min-height: 150px;
+  height: 100%;
+}
+.about-content > p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.btn-more {
+  width: max-content;
+  height: 46px;
+  padding: 0 25px;
+  background-color: #fbae17;
+  border-radius: 50px;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+}
+.btn-more > button {
+  background-color: transparent;
+  gap: 0 5px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn-more:hover {
+  background-color: #000;
+}
+.btn-more:hover.btn-more > button {
+  color: #fbae17;
+}
+
+/* raw-material */
+.raw-materials,
+.factory {
+  margin-top: 25px;
+}
+/* end raw-material */
+/* end about */
+
+/* codes */
+.codes {
+  margin-top: 80px;
+  background-image: url("https://milanocoffee.com.vn/img/background-wrinkled-paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+.code-container > h2 {
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.code-wrapper {
+  padding: 0 15px;
+  margin-top: 60px;
+}
+.code {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.code-image {
+  width: 585px;
+  height: 440px;
+}
+.code-image > img {
+  transition: all 0.5s ease-in-out;
+}
+.code-bottom {
+  width: 100%;
+  height: 70px;
+  background-color: #fbae17;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0.89;
+}
+.code-bottom > h3 {
+  font-size: 18px;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.code:hover .code-image > img {
+  transform: scale(1.07);
+}
+/* end codes */
+/* footer */
+.footer {
+  background-image: url("https://milanocoffee.com.vn/wp-content/themes/main2022/img/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-weight: 700;
+}
+.footer-wrapper {
+  height: 100%;
+  padding: 70px 0;
+  background-color: #000;
+  opacity: 0.9;
+}
+.footer-container {
+  z-index: 99;
+}
+/* footer-left */
+
+.footer-headline {
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.footer-info {
+  margin-top: 30px;
+  gap: 29px 0;
+}
+.footer-item > span {
+  font-weight: 100 !important;
+}
+/* end footer-left */
+
+/* footer-center */
+.footer-text > h4 {
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.center-socials {
+  gap: 0 25px;
+}
+.center-social {
+  width: 50px;
+  height: 50px;
+}
+.footer-menu {
+  margin-top: 17px;
+}
+.footer-menu > a {
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: 100;
+}
+.footer-download {
+  margin-top: 28px;
+}
+.qr-wrapper {
+  gap: 0 10px;
+}
+.qr {
+  width: 230px;
+}
+.center-qr {
+  height: auto;
+  gap: 10px 0;
+}
+.center-qr-app > img:nth-child(1),
+.center-qr-gg > img:nth-child(1) {
+  width: auto;
+  height: 39px;
+}
+.center-qr-app > img:nth-child(2),
+.center-qr-gg > img:nth-child(2) {
+  max-width: 100%;
+}
+/* end footer-center */
+/* footer-right */
+
+.phone {
+  margin-top: 16px;
+}
+.phone > a {
+  color: #fbae17;
+  font-size: 32px;
+  line-height: 32px;
+}
+.footer-branchs {
+  margin-top: 40px;
+}
+.branch {
+  margin-top: 15px;
+}
+.branch-title > h4 {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.branch-title > span {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 100;
+}
+
+.footer-medias {
+  margin-top: 30px;
+}
+.media > a {
+  color: #fff;
+  font-size: 32px;
+  transition: all 450ms ease-in-out;
+}
+.media > a:hover {
+  color: #fbae17;
+}
+/* end-footer-right */
+/* end footer */
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+  .header-container {
+    position: relative;
+  }
+  .header-nav {
+    background-color: #000;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 120%;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+  .header-nav.is-show {
+    transform: translateX(-63px);
+    animation-name: showMenu;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes showMenu {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-63px);
+    }
+  }
+
+  .header-nav > li {
+    width: 100%;
+  }
+  .header-link,
+  .header-nation {
+    padding: 0 0 0 40px;
+    color: #fff;
+  }
+  .about-container,
+  .code-wrapper {
+    flex-direction: column;
+  }
+  .about-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .raw-material {
+    flex-direction: column-reverse;
+  }
+  .code-wrapper {
+    gap: 40px 0;
+  }
+  .btn-list {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .btn-list.is-close {
+    display: none;
+  }
+  .btn-off.is-close {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .btn-list.is-active {
+    display: inline-block;
+  }
+  .btn-off.is-hidden {
+    display: none;
+  }
+  .qr-wrapper {
+    justify-content: flex-start !important;
+  }
+  .footer-text {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .header-logo {
+    width: 120px;
+  }
+  .header-nav.is-show {
+    transform: translateX(-20px);
+  }
+  .btn-header {
+    font-size: 10px;
+    line-height: 35px;
+    height: 35px;
+  }
+
+  @keyframes showMenu {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-22px);
+    }
+  }
+  .hero-container > h1 {
+    font-size: 23px;
+  }
+  .code-image {
+    width: auto;
+    height: 342px;
+  }
+  .footer-wrapper {
+    padding: 17px 10px;
+    opacity: 0.8;
+  }
+
+  .qr {
+    width: 100px;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
